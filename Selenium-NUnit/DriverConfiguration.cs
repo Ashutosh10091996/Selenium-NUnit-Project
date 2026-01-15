@@ -18,6 +18,13 @@ namespace Selenium_NUnit
             Driver.Url = "https://www.saucedemo.com/";
             loginPage LoginPage = new loginPage(Driver);
             LoginPage.login("standard_user", "secret_sauce");
+            Add_to_Cart_Page ADC = new Add_to_Cart_Page(Driver);
+            ADC.BagPack();
+            ADC.jacket();
+            ADC.redTshirt();
+            ADC.cartButton();
+            Check_OutPage CP = new Check_OutPage(Driver);
+            CP.CheckOutButton();
 
         }
         [TearDown]

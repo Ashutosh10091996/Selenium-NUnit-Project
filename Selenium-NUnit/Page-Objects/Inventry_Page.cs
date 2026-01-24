@@ -8,11 +8,11 @@ using System.Text;
 namespace Selenium_NUnit.Page_Objects
 {
 
-    public class Add_to_Cart_Page
+    public class Inventry_Page
     {
         private IWebDriver driver;
         private WebDriverWait Wait;
-        public Add_to_Cart_Page(IWebDriver driver)
+        public Inventry_Page(IWebDriver driver)
         {
             this.driver = driver;
             this.Wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));

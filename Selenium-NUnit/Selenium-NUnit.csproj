@@ -25,6 +25,11 @@
   <ItemGroup>
     <Using Include="NUnit.Framework" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dataset\" />
+    <Folder Include="Local Jenkins Configue\" />
+  </ItemGroup>
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">
 		<Copy SourceFiles="App.Config" DestinationFiles="$(OutDir)\testhost.dll.config" />
 	</Target>
